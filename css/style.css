@@ -1,0 +1,9 @@
+#cont {
+  background-image: linear-gradient(black, grey);
+  background-size: 100vh 100vw;
+  height: 100vh;
+}
+
+.bevezeto {
+  color: white;
+}
