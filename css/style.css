@@ -12,6 +12,10 @@
 }
 
 #bevezetokep {
-  width: 21vw; 
-  height: 40vh;
+  height: 100%;
+  width: auto;
+}
+
+section {
+  color: white;
 }
