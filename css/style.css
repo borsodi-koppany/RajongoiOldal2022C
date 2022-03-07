@@ -1,9 +1,21 @@
 #cont {
   background-image: linear-gradient(black, grey);
-  background-size: 100vh 100vw;
+  
   height: 100vh;
+  width: auto;
+  background-position: fixed;
+  background-repeat: no-repeat;
 }
 
 .bevezeto {
+  color: white;
+}
+
+#bevezetokep {
+  height: 100%;
+  width: auto;
+}
+
+section {
   color: white;
 }
