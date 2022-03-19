@@ -1,7 +1,7 @@
 #cont {
   background-image: linear-gradient(black, grey);
   
-  height: 200vh;
+  height: 500vh;
   width: auto;
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -26,6 +26,7 @@ section {
   background-color: rgb(170, 2, 2);
   color: white;
   border-radius: 10px;
+  border: 0px rgb(170, 2, 2);
   
 }
 
@@ -34,6 +35,7 @@ section {
   transition: 500ms;
   text-decoration: none;
   color: white;
+  border: 0px red;
 }
 
 #cards {
@@ -43,8 +45,15 @@ section {
 #kartya1,
 #kartya2,
 #kartya3,
-#kartya4 {
+#kartya4,
+#kartya5,
+#kartya6,
+#kartya7,
+#kartya8,
+#kartya9,
+#kartya10,
+#kartya11 {
   background-color: rgba(71, 71, 71, 0.274);
-  width: 20vh;
+  
   height: auto;
 }
