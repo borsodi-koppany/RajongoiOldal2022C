@@ -1,7 +1,9 @@
+
+
 #cont {
   background-image: linear-gradient(black, grey);
   
-  height: 200vh;
+  height: 500vh;
   width: auto;
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -20,16 +22,41 @@ section {
   color: white;
 }
 
-#gomb {
+.gomb {
   text-decoration: none;
-  padding: 10px;
+  padding: 5%;
   background-color: rgb(170, 2, 2);
   color: white;
   border-radius: 10px;
+  border: 0px rgb(170, 2, 2);
+  
 }
 
-#gomb:hover {
-  padding: 15px;
+.gomb:hover {
   background-color: red;
   transition: 500ms;
+  text-decoration: none;
+  color: white;
+  border: 0px red;
+}
+
+#cards {
+  color: white;
+}
+
+#kartya1,
+#kartya2,
+#kartya3,
+#kartya4,
+#kartya5,
+#kartya6,
+#kartya7,
+#kartya8,
+#kartya9,
+#kartya10,
+#kartya11,
+#kartya0 {
+  background-color: rgba(71, 71, 71, 0.274);
+  
+  height: auto;
 }
