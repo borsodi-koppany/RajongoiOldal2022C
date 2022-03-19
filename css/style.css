@@ -22,14 +22,14 @@ section {
 
 .gomb {
   text-decoration: none;
-  padding: 10px;
+  padding: 5%;
   background-color: rgb(170, 2, 2);
   color: white;
   border-radius: 10px;
+  
 }
 
 .gomb:hover {
-  padding: 15px;
   background-color: red;
   transition: 500ms;
   text-decoration: none;
@@ -41,8 +41,10 @@ section {
 }
 
 #kartya1,
-#kartya2 {
+#kartya2,
+#kartya3,
+#kartya4 {
   background-color: rgba(71, 71, 71, 0.274);
-  width: 40vh;
+  width: 20vh;
   height: auto;
 }
