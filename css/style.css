@@ -26,12 +26,13 @@ section {
 
 .gomb {
   text-decoration: none;
-  padding: 5%;
+  padding: 0.9em;
   background-color: rgb(170, 2, 2);
   color: white;
   border-radius: 10px;
   border: 0px rgb(170, 2, 2);
-  
+  position: relative;
+  font-size: 0,8em;
 }
 
 .gomb:hover {
@@ -59,7 +60,7 @@ section {
 #kartya11,
 #kartya0 {
   background-color: rgba(71, 71, 71, 0.274);
-  
+  width: auto;
   height: auto;
 }
 
@@ -109,7 +110,7 @@ nav.navbar {
   width: auto;
   background-attachment: scroll;
   background-repeat: no-repeat;
-  margin-top: 35px;
+  margin-top: 70px;
 }
 
 #cont3 {
