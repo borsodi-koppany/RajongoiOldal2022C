@@ -1,12 +1,14 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital@1&family=Rubik&display=swap');
 
 #cont {
   background-image: linear-gradient(black, grey);
   
+  font-family:'Rubik', sans-serif;
   height: 500vh;
   width: auto;
   background-attachment: scroll;
   background-repeat: no-repeat;
+  margin-top: 35px;
 }
 
 .bevezeto {
@@ -60,3 +62,31 @@ section {
   
   height: auto;
 }
+
+.nav-item:hover {
+  background-color: rgb(170, 2, 2);
+  box-sizing: border-box;
+  border-radius: 40px;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.nav-item {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+div.container a.navbar-brand {
+  font-weight: 700;
+  font-size: 30px;
+  color: rgb(170, 2, 2);
+  text-decoration: dashed;
+}
+
+button.navbar-toggler{
+  color:rgb(170, 2, 2);
+}
+nav.navbar {
+  background-color: black;
+} 
+
