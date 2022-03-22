@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital@1&family=Rubik&display=swap');
 
 #cont {
-  background-image: linear-gradient(black, grey);
+ /* background-image: linear-gradient(black, grey);*/
   
   font-family:'Rubik', sans-serif;
-  height: 500vh;
+  /*height: 500vh;*/
   width: auto;
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -91,11 +91,11 @@ nav.navbar {
   background-color: black;
 } 
 
-#cont1 {
-  background-image: linear-gradient(black, grey);
+ #cont1 {
+ /* background-image: linear-gradient(black, grey);*/
   
   font-family:'Rubik', sans-serif;
-  height: 200vh;
+ /* height: 200vh;*/
   width: auto;
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -103,10 +103,10 @@ nav.navbar {
 }
 
 #cont2 {
-  background-image: linear-gradient(black, grey);
+ /* background-image: linear-gradient(black, grey);*/
   
   font-family:'Rubik', sans-serif;
-  height: 950vh;
+  /*height: 950vh;*/
   width: auto;
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -114,12 +114,17 @@ nav.navbar {
 }
 
 #cont3 {
-  background-image: linear-gradient(black, grey);
+ /* background-image: linear-gradient(black, grey);*/
   
   font-family:'Rubik', sans-serif;
-  height: 255vh;
+  /*height: 255vh;*/
   width: auto;
   background-attachment: scroll;
   background-repeat: no-repeat;
   margin-top: 35px;
+} 
+
+body {
+  background-image: linear-gradient(black, grey);
+  height: 100%;
 }
