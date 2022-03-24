@@ -117,7 +117,7 @@ nav.navbar {
  /* background-image: linear-gradient(black, grey);*/
   
   font-family:'Rubik', sans-serif;
-  /*height: 255vh;*/
+  height: 100vh;
   width: auto;
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -127,4 +127,8 @@ nav.navbar {
 body {
   background-image: linear-gradient(black, grey);
   height: 100%;
+}
+
+.kep {
+  border-radius: 20px;
 }
