@@ -2,9 +2,10 @@
     text-align: center;
 }
 
-#kép {
+.kép {
     margin-top: 15px;
     border-radius: 5px;
+    width: 100%;
 }
 
 .card-title, .card-text {
