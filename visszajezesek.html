@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" crossorigin="anonymous" integrity="sha384-rY/jv8mMhqDabXSo+UCggqKtdmBfd3qC2/KvyTDNQ6PcUJXaxK1tMepoQda4g5vB"></script>
     <link rel="shortcut icon" href="képek/favicon2.ico" type="image/x-icon">
-    <title>Munkássága</title>
+    <link rel="stylesheet" href="css/visszajelzesek.css">
+    <title>Visszajelzések</title>
 </head>
 <body>
     <div id="cont">
@@ -39,16 +42,119 @@
           </div>
         </div>
       </nav>
-    
-    
-    
-    
-    
-    </div>
+
+      <div class="container2">
+        <h2>Fejtsd ki a véleményed!</h2>
+        <div class="row">
+            <div class="col">
+              <div class="inputBox">
+                  <input type="text" name="name" id="username" required="required">
+                  <span class="text">Név</span>
+                  <span class="line"></span>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+              <div class="inputBox">
+                  <input type="text" name="email" id="email" required="required">
+                  <span class="text">E-mail</span>
+                  <span class="line"></span>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="inputBox textarea">
+                <textarea id="commentArea" name="commentArea" required="required"></textarea>
+                <span class="text">Visszajelzésed...</span>
+                <span class="line"></span>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+              <button name="submit" id="send" class="btn gomb">Küldés</button>
+          </div>
+        </div>
+        <div class="prev-comments" id="prev-comments">
+
+            
+        </div>
+        </div>
+      </div>
 
 
-
-    <script src="javascript/jquery-3.3.1.min.js"></script>
-    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script>
+      var username = document.getElementById("username");
+      var email = document.getElementById('email');
+      var commentArea = document.getElementById("commentArea");
+  
+      var comments = document.getElementById("prev-comments");
+  
+      $('#send').click(function (e) { //Ha megnyomom a küldés gombot
+          var rawData = { //Formázatlan adat, a felhaszálónév és a comment mező, email értékei
+              name: username.value,
+              email: email.value,
+              comment: commentArea.value,
+          };
+          
+          var formedData = JSON.stringify(rawData); //Formázza az adatot hogy JSON formátumú adat
+  
+          $.ajax({ //AJAX request
+              //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+              url: 'https://commentsproba2.000webhostapp.com/write.php', //Az URL ahonnan kérem az adatot
+              //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+              type: 'post', //A kérés módja (POST = rejtett, GET = látható)
+              dataType: 'json', //A küldött adat formája json
+              data: {commentData: formedData}, //Az adat amit küldök commentData néven
+              success: function(response){ //Ha kapok választ ...
+                  if(response == "empty"){ //Ha a válasz az "empty" akkor...
+                      return;
+                  }
+                  else if(response == "hiba"){ //Ha hiba akkor
+                      return;
+                  }
+                  else{ //Ha siker akkor..
+                      clearForm(); //Tisztítsa az adatmezőt
+                      updateComments(); //Frissítse a kommenteket
+                  }
+              }
+          });
+      }); 
+  
+      function updateComments(){
+          $.ajax({
+              //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+              url: 'https://commentsproba2.000webhostapp.com/read.php',
+              //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+              type: 'post',
+              dataType: 'json',
+              data: {commentData: ""},
+              success: function(response){ 
+                  if(response == false){ //Ha nincsenek kommentek akkor ne adjon hibát
+                      comments.innerHTML = "";
+                  }else{
+                      var text = response.replace(", ]", "]"); //A listának amit tárolunk annak van egy üres értéke a végén, azt ezzel a sorral töröljük
+                      text = JSON.parse(text); //Egy JSON listát csinálok a szövegből
+  
+                      comments.innerHTML = ""; //Törlöm az eddigi commenteket duplikálás miatt
+                      for(let i = 0; i < text.length; i++){ //Átmegyek az összes elemén a listának
+                          comments.innerHTML += '<span style="color:darkred"><div class="border border-1 p-4 mb-4"><h5>'+ text[i].name +'</h5><h6>'+ text[i].email +'</h6><p>'+ text[i].comment +'</p></div><span>'; //Hozzáadok a komment tartóhoz egy divet listaelemenként
+                      }
+                  }
+                  
+              }
+          });
+      }
+  
+      function clearForm(){
+          username.value = "";
+          email.value = "";
+          commentArea.value = "";
+      }
+  </script>
+  <script src="javascript/jquery-3.3.1.min.js"></script>
+  <script src="bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 </html>
