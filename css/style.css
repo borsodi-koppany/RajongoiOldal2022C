@@ -132,3 +132,30 @@ body {
 .kep {
   border-radius: 20px;
 }
+
+::-webkit-scrollbar {
+  width: 1em;
+  height: 0em;
+}
+
+::-webkit-scrollbar-track {
+  /*background-color: black;*/
+  background-image: linear-gradient(black, rgb(36, 36, 36));
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(red, rgb(170, 2, 2));
+  border-radius: 100vw;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: black;
+}
+
+@supports (scrollbar-color: red black) {
+  * {
+    scrollbar-color: red black;
+    scrollbar-width: thin;
+  }
+}
