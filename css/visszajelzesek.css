@@ -14,9 +14,11 @@ body {
     text-transform: lowercase;
 }
 .container2 {
-    justify-content: center;
-    width: 600px;
-    padding: 70px;
+    /*justify-content: center;*/
+    width: 60vw;
+    padding: 0;
+    margin: auto;
+    max-width: 600px;
 }
 
 h2 {
@@ -32,6 +34,7 @@ h2 {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    
 }
 
 .col {
@@ -137,7 +140,8 @@ textarea:focus ~ .line, textarea:valid ~ .line {
 }
 
 .row {
-    margin: 0px;
+    text-align: left;
+    margin: auto;
 }
 
 .komment {
@@ -169,4 +173,13 @@ textarea:focus ~ .line, textarea:valid ~ .line {
 .position {
     position: relative;
     margin-top: 10px;
+    align-items: center;
+}
+
+.komment {
+    min-width: 100px;
+}
+
+.col {
+    text-align: left;
 }
