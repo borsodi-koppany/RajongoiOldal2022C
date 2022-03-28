@@ -181,3 +181,29 @@ body {
     scrollbar-width: thin;
   }
 }
+
+.navbar-toggler {
+  width: 10vh;
+}
+
+.navbar-toggler:hover {
+  background-color: transparent;
+}
+
+.nav-link {
+  padding: 0;
+  margin: 5px;
+  text-align: left;
+  display: block;
+}
+
+.link {
+  padding: 0;
+  margin: 5px;
+  text-align: left;
+  display: block;
+}
+
+.nav-item {
+  margin: 5px;
+}
