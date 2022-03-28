@@ -1,27 +1,30 @@
-## Rajongói oldal - Eminem
- # Kezdőlap
+# Rajongói oldal - Eminem
+ ## Kezdőlap
  - bevezetés
  - képek
  - valami amivel megfogjuk az oldalra látogatót
  - menüsor a további oldalakra
- # Kapcsolatok
+ ## Kapcsolatok
  - űrlap
  - véleményezés lehetősége
 
- # Visszajelzések
+ ## Visszajelzések
  - a vélemények itt jelennek majd meg, itt lehet mások véleményét is visszaolvasni
- # Élete
+ ## Élete
  - Eminem élete
  - képek, érdekességek
- # Munkássága
+ ## Munkássága
  - albumai, fellépései, 0-ról a csúcsig
  - pillanatnyi helyzete
  - munkásságának mérföldkövei
- # Névjegy
+ ## Névjegy
  - a három fejlesztő adatai
  - mindenkiről egy személyes kép
  - elérhetőségek
 
+ ## Quiz
+ - kérdések Eminemről
+ 
  *Mappastruktúra*
   - html fájlok a főmappában
   - css, bootstrap, java fájlok a főmappa alkönyvtárában

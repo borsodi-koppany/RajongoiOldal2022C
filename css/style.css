@@ -124,6 +124,28 @@ nav.navbar {
   margin-top: 35px;
 } 
 
+#cont4 {
+  /* background-image: linear-gradient(black, grey);*/
+   
+   font-family:'Rubik', sans-serif;
+   height: 100vh;
+   width: auto;
+   background-attachment: scroll;
+   background-repeat: no-repeat;
+   margin-top: 140px;
+ }
+
+ #cont5 {
+  /* background-image: linear-gradient(black, grey);*/
+   
+   font-family:'Rubik', sans-serif;
+   height: 100vh;
+   width: auto;
+   background-attachment: scroll;
+   background-repeat: no-repeat;
+   margin-top: 80px;
+ }
+
 body {
   background-image: linear-gradient(black, grey);
   height: 100%;
