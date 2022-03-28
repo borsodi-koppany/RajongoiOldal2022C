@@ -2,6 +2,7 @@ function showDiv() {
     document.getElementById("welcomeDiv").style.display = "block";
     document.getElementById("show").style.display = "none";
     document.getElementById("q").style.display = "none";
+    document.getElementById("position").style.display = "none";
  }
 
 const quizData = [
