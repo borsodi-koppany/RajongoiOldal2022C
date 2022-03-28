@@ -165,3 +165,8 @@ textarea:focus ~ .line, textarea:valid ~ .line {
     color: red;
     text-align: right;
 }
+
+.position {
+    position: relative;
+    margin-top: 10px;
+}
