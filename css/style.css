@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital@1&family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital@1&family=Rubik&display=swap");
 
 #cont {
- /* background-image: linear-gradient(black, grey);*/
-  
-  font-family:'Rubik', sans-serif;
+  /* background-image: linear-gradient(black, grey);*/
+
+  font-family: "Rubik", sans-serif;
   /*height: 500vh;*/
   width: auto;
   background-attachment: scroll;
@@ -32,7 +32,7 @@ section {
   border-radius: 10px;
   border: 0px rgb(170, 2, 2);
   position: relative;
-  font-size: 0,8em;
+  font-size: 0, 8em;
 }
 
 .gomb:hover {
@@ -84,18 +84,18 @@ div.container a.navbar-brand {
   text-decoration: dashed;
 }
 
-button.navbar-toggler{
-  color:rgb(170, 2, 2);
+button.navbar-toggler {
+  color: rgb(170, 2, 2);
 }
 nav.navbar {
   background-color: black;
-} 
+}
 
- #cont1 {
- /* background-image: linear-gradient(black, grey);*/
-  
-  font-family:'Rubik', sans-serif;
- /* height: 200vh;*/
+#cont1 {
+  /* background-image: linear-gradient(black, grey);*/
+
+  font-family: "Rubik", sans-serif;
+  /* height: 200vh;*/
   width: auto;
   background-attachment: scroll;
   background-repeat: no-repeat;
@@ -103,9 +103,9 @@ nav.navbar {
 }
 
 #cont2 {
- /* background-image: linear-gradient(black, grey);*/
-  
-  font-family:'Rubik', sans-serif;
+  /* background-image: linear-gradient(black, grey);*/
+
+  font-family: "Rubik", sans-serif;
   /*height: 950vh;*/
   width: auto;
   background-attachment: scroll;
@@ -114,41 +114,43 @@ nav.navbar {
 }
 
 #cont3 {
- /* background-image: linear-gradient(black, grey);*/
-  
-  font-family:'Rubik', sans-serif;
-  height: 100vh;
+  /* background-image: linear-gradient(black, grey);*/
+
+  font-family: "Rubik", sans-serif;
+  height: 120vh;
   width: auto;
   background-attachment: scroll;
   background-repeat: no-repeat;
   margin-top: 35px;
-} 
+}
 
 #cont4 {
   /* background-image: linear-gradient(black, grey);*/
-   
-   font-family:'Rubik', sans-serif;
-   height: 100vh;
-   width: auto;
-   background-attachment: scroll;
-   background-repeat: no-repeat;
-   margin-top: 140px;
- }
 
- #cont5 {
+  font-family: "Rubik", sans-serif;
+  height: 100vh;
+  width: auto;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  margin-top: 140px;
+}
+
+#cont5 {
   /* background-image: linear-gradient(black, grey);*/
-   
-   font-family:'Rubik', sans-serif;
-   height: 100vh;
-   width: auto;
-   background-attachment: scroll;
-   background-repeat: no-repeat;
-   margin-top: 80px;
- }
+
+  font-family: "Rubik", sans-serif;
+  height: 100vh;
+  width: auto;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  margin-top: 80px;
+}
 
 body {
   background-image: linear-gradient(black, grey);
-  height: 100%;
+  width: 100%;
+  height: max-content;
+  position: static;
 }
 
 .kep {
@@ -163,7 +165,6 @@ body {
 ::-webkit-scrollbar-track {
   /*background-color: black;*/
   background-image: linear-gradient(black, rgb(36, 36, 36));
-  
 }
 
 ::-webkit-scrollbar-thumb {
@@ -210,4 +211,13 @@ body {
 
 .év {
   color: rgb(167, 163, 163) !important ;
+}
+
+#cont6 {
+  font-family: "Rubik", sans-serif;
+  height: 88.8vh;
+  width: auto;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  margin-top: 80px;
 }
