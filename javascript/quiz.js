@@ -31,7 +31,7 @@ const quizData = [
         correct: "a",
     },
     {
-        question: "Az album kiadása után min kellett keresztül mennie?",
+        question: "Az album után min ment keresztül?",
         a: "Autóbaleset",
         b: "Önpusztítás",
         c: "Hatalmas siker",

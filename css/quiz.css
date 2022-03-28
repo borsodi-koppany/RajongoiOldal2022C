@@ -114,6 +114,7 @@
   #show:hover {
     background-color: red;
     border: 1px solid red;
+    transition: 500ms;
   }
 
   .position {
@@ -132,6 +133,7 @@
     border: 2px solid rgba(100, 100, 100, 0.815);
     align-items: center;
     vertical-align: middle;
+    margin-top: 105px
   }
 
   .nav-link {

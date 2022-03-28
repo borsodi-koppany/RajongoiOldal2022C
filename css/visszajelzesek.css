@@ -148,6 +148,7 @@ textarea:focus ~ .line, textarea:valid ~ .line {
     background-color: rgba(34, 34, 34, 0.274);
     padding: 10px;
     margin-top: 10px;
+    margin-bottom: 20px;
     border-radius: 6px;
     border: 2px solid rgba(0, 0, 0, 0.253);
     
@@ -155,7 +156,7 @@ textarea:focus ~ .line, textarea:valid ~ .line {
 
 .p1 {
     color: rgb(170, 2, 2);
-    text-align: center;
+    text-align: left;
     font-size: 18px;
 }
 
@@ -163,11 +164,12 @@ textarea:focus ~ .line, textarea:valid ~ .line {
     color: rgb(255, 255, 255);
     margin: 0px;
     font-size: 16px;
+    text-align: center;
 }
 
 .p1 span {
     color: red;
-    text-align: right;
+    text-align: left;
 }
 
 .position {
