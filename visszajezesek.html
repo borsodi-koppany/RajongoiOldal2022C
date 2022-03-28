@@ -56,7 +56,7 @@
                 </div>
               </div>
           </div>
-          <div class="row">
+          <div class="row cum">
               <div class="col">
                 <div class="inputBox">
                     <input type="text" name="email" id="email" required="required">
@@ -65,7 +65,7 @@
                 </div>
               </div>
           </div>
-          <div class="row">
+          <div class="row cum">
             <div class="col">
               <div class="inputBox textarea">
                   <textarea id="commentArea" name="commentArea" required="required"></textarea>
@@ -74,9 +74,9 @@
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row cum">
             <div class="col">
-                <button name="submit" id="send" class="btn gomb">Küldés</button>
+                <button name="submit" id="send" class="btn gomb">K<span id="low">üldés</span></button>
             </div>
           </div>
           <div class="prev-comments" id="prev-comments">
@@ -142,7 +142,7 @@
   
                       comments.innerHTML = ""; //Törlöm az eddigi commenteket duplikálás miatt
                       for(let i = 0; i < text.length; i++){ //Átmegyek az összes elemén a listának
-                          comments.innerHTML += '<span style="color:darkred"><div class="border border-1 p-4 mb-4"><h5>'+ text[i].name +'</h5><h6>'+ text[i].email +'</h6><p>'+ text[i].comment +'</p></div><span>'; //Hozzáadok a komment tartóhoz egy divet listaelemenként
+                          comments.innerHTML += '<div class="komment"><p class="p1"><span>'+ text[i].name + "</span> " + "(" + text[i].email + ")" +'</p><p class="p2">'+ text[i].comment +'</p></div>'; //Hozzáadok a komment tartóhoz egy divet listaelemenként
                       }
                   }
                   
