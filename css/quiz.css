@@ -5,7 +5,7 @@
     width: 60vw;
     max-width: 600px;
     height: auto;
-    max-height: 600px;    
+   /* max-height: 650px;    */
     overflow: hidden;
     margin: auto;
     font-size: 2rem;
@@ -16,10 +16,12 @@
     transform: translate(-50%, -50%);
     margin: auto;
     margin-top: 80px;
+    align-items: flex-start;
   }
 
   .quiz-header{
     padding: 4rem;
+    margin: auto;
     
     
   }
@@ -144,5 +146,17 @@
   }
 
   #question {
-    font-size: 30px;
+    font-size: 3vw;
+    text-align: center;
   }
+
+li {
+  font-size: 2vw;
+}
+
+#a_text,
+#b_text,
+#c_text,
+#d_text {
+  font-size: 0.8em;
+}
