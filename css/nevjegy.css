@@ -85,3 +85,23 @@ div.card {
 div.betu {
     font-weight: 800;
   }
+
+@media screen and (max-width: 576px) {
+  .col-sm-6{
+    width: auto;
+    margin: auto;
+  }
+  
+}
+
+@media screen and (max-width: 992px) {
+  .col-sm-offset-6 {
+    width: auto;
+    margin: auto;
+  }
+}
+
+.bruv {
+  width: 30vw;
+  height: auto;
+}
