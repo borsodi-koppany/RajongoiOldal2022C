@@ -1,6 +1,7 @@
 .profile-area {
     padding: 80px 0;
     margin-top: 70px;
+    margin-bottom: 55px;
   }
   
 div.card {
@@ -9,7 +10,6 @@ div.card {
     border-radius: 15px;
     background-color: rgb(35, 35, 35);
     border-width: 2px;
-    margin-bottom: 35px;
     margin-left: 6px;
     margin-right: 6px;
   }
