@@ -31,3 +31,10 @@ div.row p {
 h5 {
   font-size: 0.9em;
 }
+
+@media screen and (max-width: 576px) {
+  .card {
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+}
