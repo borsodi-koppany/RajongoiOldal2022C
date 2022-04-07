@@ -1,0 +1,18 @@
+[
+    {
+        "_id": 1,
+        "releaseDate": "2005 előtt" 
+    },
+    {
+        "_id": 2,
+        "releaseDate": "2010 előtt"
+    },
+    {
+        "_id": 3,
+        "releaseDate": "2015 előtt"
+    },
+    {
+        "_id": 4,
+        "releaseDate": "2015 után"
+    }
+]
